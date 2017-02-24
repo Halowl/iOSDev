@@ -1,7 +1,7 @@
 # 使用CocoaPods管理本地库
 1. 在~/Desktop/Menu目录下创建一个文件
 2. 把你添加的文件放到文件夹中,如图所示
-![](media/14878433242852/14878450466853.jpg)
+![](https://github.com/gongjujun/MyCode/blob/master/%E6%96%87%E7%AB%A0/CocoaPods/5C4BE0A6-834D-4340-96D4-3902BD9312FD.png?raw=true)
 
 2. 在此目录下`git init`(cd /Users/adobe/Desktop/Menu目录 )
 3. `git add .`
@@ -36,13 +36,12 @@
 	```
 
 7. pod install
-
-	![](media/14878433242852/14878436168103.jpg)
+![](https://raw.githubusercontent.com/gongjujun/MyCode/master/%E6%96%87%E7%AB%A0/CocoaPods/Snip20170224_12.png)
 
 
 - [使用CocoaPods管理本地代码](http://www.jianshu.com/p/d2b0acfad0d8)
 - [基于 CocoaPods 和 Git 的 iOS 工程组件化实践](https://skyline75489.github.io/post/2016-3-19_ios_modularization_practice.html)
-	![](media/14878433242852/14878448578595.jpg)
-	
+- ![](https://github.com/gongjujun/MyCode/blob/master/%E6%96%87%E7%AB%A0/CocoaPods/Snip20170224_11.png?raw=true)
+
 	
 
