@@ -3,6 +3,15 @@
  
     因为个人原因(其实就是比较懒),不想写文章,但是,在工作中,有一些常用的,又或者看到不错的东西,想把它们整理起来了,就有了这个库.
 ## 工作常用
+- 弹出视图
+	- [DGGooeySlideMenu---模仿skype照相按钮弹出菜单弹簧效果](http://www.code4app.com/forum.php?mod=viewthread&tid=8633&extra=page%3D136%26filter%3Dsortid%26orderby%3Ddateline%26sortid%3D1)
+	
+	![](http://www.code4app.com/data/attachment/forum/201606/06/161619fwlrtka9wz4tlkrj.gif)
+	
+	- [XLActionController](https://github.com/xmartlabs/XLActionController)
+
+	![](https://github.com/xmartlabs/XLActionController/raw/master/Media/demo_skype.gif)
+	
 - 新手引导
 	- [SWIFT 新手指引视图 Gecco](http://www.code4app.com/forum.php?mod=viewthread&tid=8405)
 	
@@ -51,6 +60,14 @@
 	- [深入浅出 JavaScriptCore](http://www.jianshu.com/p/ac534f508fb0)
 - 加密/解密/签名
 - 菜单
+	- [ExpandingMenu](http://www.code4app.com/forum.php?mod=viewthread&tid=8270&extra=page%3D169%26filter%3Dsortid%26orderby%3Dheats%26sortid%3D1)
+
+	![](http://www.code4app.com/data/attachment/forum/201605/19/100156l30imwiuup02zun2.gif)
+	
+	- [FTPopOverMenu](https://github.com/liufengting/FTPopOverMenu)
+
+	![](https://raw.githubusercontent.com/liufengting/FTResourceRepo/master/Resource/FTPopOverMenu/screenshots.gif)
+	
 - 推送
 - 广告/闪屏
 	- [twitter animation](http://www.code4app.com/forum.php?mod=viewthread&tid=9553)
@@ -93,12 +110,50 @@
 - 字典转模型
 	- [MJExtension](https://github.com/CoderMJLee/MJExtension)
 - 选项卡
-- 键盘输入
+	- [［Swift］ ColorMatchTabs](http://www.code4app.com/forum.php?mod=viewthread&tid=9982&extra=page%3D6%26filter%3Dsortid%26orderby%3Ddateline%26sortid%3D1)
+	![](http://www.code4app.com/data/attachment/forum/201608/09/104334ba472bbxzbsqh3hx.gif)
+
+	- [快速灵活的集成网易新闻, 头条, 腾讯视频的滚动切换页面](http://www.code4app.com/forum.php?mod=viewthread&tid=7596)
+	
+	![](http://www.code4app.com/data/attachment/forum/201604/15/090918il41kzb4a4llo14d.gif)
+
+	- [TYPagerController 页面控制器,可以滚动内容和标题栏](http://www.code4app.com/forum.php?mod=viewthread&tid=8398)
+	
+	![](http://www.code4app.com/data/attachment/forum/201605/25/130710jl10niinak09c9ri.gif)
+	
+- 键盘
+	- [ZYKeyboardUtil](https://github.com/liuzhiyi1992/ZYKeyboardUtil)
+
+	![](https://raw.githubusercontent.com/liuzhiyi1992/MyStore/master/ZYKeyboardUtil/ZYKeyboardUtil%E5%A4%9A%E4%B8%AA%E8%BE%93%E5%85%A5%E6%8E%A7%E4%BB%B6.gif)
+	
 - 上传下载
 - 支付
+- 主题/换肤
+	- [LEETheme](https://github.com/lixiang1994/LEETheme)
+	
+	![](https://github.com/lixiang1994/LEETheme/raw/master/%E7%A4%BE%E5%8C%BA%E6%97%A5%E9%97%B4.gif)![](https://github.com/lixiang1994/LEETheme/raw/master/%E7%A4%BE%E5%8C%BA%E5%A4%9C%E9%97%B4.gif)
+	
 - 登录
 - 二维码
+	- [EFQRCode](https://github.com/EyreFree/EFQRCode)
+	![](https://github.com/EyreFree/EFQRCode/raw/master/assets/EFQRCode.jpg)
+	
 - 通知
+	- [EBForeNotification](https://github.com/pikacode/EBForeNotification)
+	
+	![](https://github.com/Yasashi/EBForeNotification/raw/master/screenshot/screenshot02.gif)
+
+
+- 城市选择器
+	- [CFCityPickerVC](https://github.com/CharlinFeng/CFCityPickerVC)
+	- 
+	![](https://github.com/CharlinFeng/CFCityPickerVC/raw/master/CFCityPickerVC/2.gif)
+
+
+- Toast
+	- [FFToast](https://github.com/imlifengfeng/FFToast)	
+  ![](https://github.com/imlifengfeng/FFToast/raw/master/screenshots/screenshots.png)
+  
 - WiFi
 
 ## UIKit速查
@@ -106,10 +161,31 @@
 - UITextView
 - UIProgress
 - UILabel
+	- [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel)
+
+	![](https://cloud.githubusercontent.com/assets/219689/3491838/ffc5aff2-059d-11e4-970c-6e2d7664785a.gif)
+	
 - UITableView
 - UIScrollView
 - UIButton
 - UITabBarController
+	- [ESTabBarController](https://github.com/eggswift/ESTabBarController)
+	
+	![](https://github.com/eggswift/ESTabBarController)
+	
+	- [TabbarTest](https://github.com/2601896757/TabbarTest)
+	
+	![](https://github.com/2601896757/TabbarTest/raw/master/AnimationTabbar.gif)
+	
+	- [animated-tab-bar](https://github.com/Ramotion/animated-tab-bar)
+
+	![](https://raw.githubusercontent.com/Ramotion/animated-tab-bar/master/Screenshots/tab-bar-icons-iphone-ramotion-animation-interface-design.gif)
+	
+- UITableViewCell
+	- [CCFoldCell](https://github.com/bref-Chan/CCFoldCell)
+	
+	![](https://github.com/bref-Chan/CCFoldCell/blob/master/image/CCFoldCell.gif)	
+	
 - UITabBar
 - UITextField
 - UISwitch
