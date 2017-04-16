@@ -8,9 +8,6 @@
 ### [UIKit](https://github.com/gongjujun/iOSDev/blob/master/MD/UIKit.md)
 ### [第三方](https://github.com/gongjujun/iOSDev/blob/master/MD/%E7%AC%AC%E4%B8%89%E6%96%B9.md)
 ### [Demo](https://github.com/gongjujun/iOSDev/blob/master/MD/Demo.md)
-### [音视频]()
-### [动画]()
-### [蓝牙]()
 ### [iOS文章](https://github.com/gongjujun/iOSDev/blob/master/MD/iOS%E6%96%87%E7%AB%A0.md)
 
 
