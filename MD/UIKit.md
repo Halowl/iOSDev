@@ -1,5 +1,10 @@
 #  UIKit
 - UICollectionView
+	- [UICollectionView 轻松重排](http://www.open-open.com/lib/view/open1460517859814.html)
+	- [使用 UICollectionView 实现的一个卡片动画](http://swiftcn.io/topics/64?f=w)
+
+	![](http://7vihfk.com1.z0.glb.clouddn.com/CardsAnimationDemo.gif)
+	
 	- [CollectionView Timeline Layout](http://www.jianshu.com/p/e10d95c676a8)
 	
 	![](http://upload-images.jianshu.io/upload_images/37334-8be11474c1fa3b03.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -60,6 +65,14 @@
 	![](http://www.code4app.com/data/attachment/forum/201606/06/142212oalctj2q4tqxled2.gif)
 	
 - UILabel
+	- [iOS与macOS中一款优雅的数字/金额增减动效控件(支付宝内金额增加效果)](http://www.jianshu.com/p/53b9bac43201)
+
+	![](http://upload-images.jianshu.io/upload_images/2822925-cc24900b1dfcbc6f.gif?imageMogr2/auto-orient/strip)
+	
+	- [iOS使用UICountingLabel实现数字变化的动画效果](http://www.jianshu.com/p/e25f63e7af3f)
+
+	![](http://upload-images.jianshu.io/upload_images/1803339-560cc8dc2c58ea4e.gif?imageMogr2/auto-orient/strip)
+	
 	- [将一串文字按照圆弧形排列输出](http://www.code4app.com/forum.php?mod=viewthread&tid=6018&extra=page%3D359%26filter%3Dsortid%26orderby%3Dheats%26sortid%3D1)
 
 	![](http://osscdn.code4app.com/photo/52e13ccdcb7e84ff408b48fd_1.png)
@@ -141,6 +154,14 @@
 	![](http://osscdn.code4app.com/photo/53d87470933bf04a4a8b59b9_1.gif)
 	
 - UIButton
+	- [SpreadButton](https://github.com/liuzhiyi1992/SpreadButton)
+
+	![](https://raw.githubusercontent.com/liuzhiyi1992/MyStore/master/%E9%80%81%E6%99%BA1.gif)
+	
+	- [SparkButtonDemo](https://github.com/codersaru/SparkButtonDemo)
+
+	![](https://raw.githubusercontent.com/saravananImaginea/SparkButtonDemo/master/SparkButtonDemo.gif)
+	
 	- [［swift］Misen一款动画按钮](http://www.code4app.com/forum.php?mod=viewthread&tid=8339&extra=page%3D167%26filter%3Dsortid%26orderby%3Ddateline%26sortid%3D1)
 
 	![](http://www.code4app.com/data/attachment/forum/201605/23/104304la1zri9z6piyi868.gif)
@@ -269,6 +290,14 @@
 	
 - UINavigationController
 - UIImageView
+	- [让用户的选择图片最大化，抓住用户的眼球](http://www.code4app.com/forum.php?mod=viewthread&tid=7154&extra=page%3D268%26filter%3Dsortid%26orderby%3Dheats%26sortid%3D1)
+
+	![](http://osscdn.code4app.com/photo/56b16f41b5ad2eaf0e8b4ba8_1.gif)
+	
+	- [iOS - 图片实现多层折叠效果](http://www.open-open.com/lib/view/open1451883676870.html)
+
+	![](http://static.open-open.com/lib/uploadImg/20160104/20160104130112_191.gif)
+	
 	- [谈谈 iOS 中图片的解压缩](http://www.cocoachina.com/ios/20170227/18784.html)
 	- [让多张照片呈现出叠放（Stack）的效果](http://www.code4app.com/forum.php?mod=viewthread&tid=4967&extra=page%3D350%26filter%3Dsortid%26orderby%3Dheats%26sortid%3D1)
 
