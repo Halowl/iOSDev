@@ -1,5 +1,25 @@
 #  UIKit
 - UICollectionView
+	- [网易新闻, 腾讯视频, 头条 等首页的滑块视图联动的效果OC版的简单方便的集成, 滑块](https://github.com/jasnig/ZJScrollPageView)
+
+	![](https://camo.githubusercontent.com/ba3736c4fa73e14167767834ba663b98f37a846d/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313237313833312d656362323931613433643165353230392e6769663f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970)
+	
+	- [Timeline](https://github.com/edekhayser/Timeline)
+
+	![](https://github.com/edekhayser/Timeline/raw/master/Screenshot.png)
+	
+	- [简单快速灵活的集成类似网易新闻, 头条等带滑块的滚动视图,实现视图联动, 滑块](https://github.com/jasnig/ScrollPageView)
+
+	![](https://camo.githubusercontent.com/09470610464a6b8b3400b8438d36beac31bbbdcd/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f313237313833312d316366663564623039323038613132352e6769663f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970)
+	
+	- [CollectionView做的两级菜单，可以折叠第二级菜单](http://www.code4app.com/thread-8117-1-6.html)
+
+	![](http://www.code4app.com/data/attachment/forum/201605/11/174144p92334nedv24xv2m.gif)
+	
+	- [实现collectionViewCell的移动(长按或拖拽手势)](http://www.code4app.com/forum.php?mod=viewthread&tid=7964&extra=page%3D11%26filter%3Dsortid%26sortid%3D1)
+
+	![](http://www.code4app.com/data/attachment/forum/201605/04/170544ovf0dvysskf6v20z.gif)
+	
 	- [UICollectionView 轻松重排](http://www.open-open.com/lib/view/open1460517859814.html)
 	- [使用 UICollectionView 实现的一个卡片动画](http://swiftcn.io/topics/64?f=w)
 
@@ -65,6 +85,10 @@
 	![](http://www.code4app.com/data/attachment/forum/201606/06/142212oalctj2q4tqxled2.gif)
 	
 - UILabel
+	- [FNBlingBlingLabel](https://github.com/Fnoz/FNBlingBlingLabel)
+
+	![](https://github.com/Fnoz/FNBlingBlingLabel/raw/master/readme_images/animating.gif)
+	
 	- [iOS与macOS中一款优雅的数字/金额增减动效控件(支付宝内金额增加效果)](http://www.jianshu.com/p/53b9bac43201)
 
 	![](http://upload-images.jianshu.io/upload_images/2822925-cc24900b1dfcbc6f.gif?imageMogr2/auto-orient/strip)
@@ -107,6 +131,10 @@
 	
 	
 - UITableView
+	- [一个iOS UITableView子类，允许您移动行而不进行编辑模式，只需点击并按住相应的行即可。](https://github.com/FlorianMielke/FMMoveTableView)
+
+	![](https://github.com/FlorianMielke/FMMoveTableView/raw/master/Sample.gif)
+	
 	- [滑动或者点击列表，都会在视图上产生效果非常不错的波纹动画](http://www.code4app.com/forum.php?mod=viewthread&tid=5744&extra=page%3D202%26filter%3Dsortid%26orderby%3Dheats%26sortid%3D1)
 
 	![](http://osscdn.code4app.com/photo/524e37196803fade39000000_11.gif)
@@ -258,12 +286,20 @@
 	![](https://camo.githubusercontent.com/082fc708cc461dc53832b7d14d5affdf475dd57b/68747470733a2f2f7261772e6769746875622e636f6d2f6e696e6a696e6b756e2f4e4a4b5765625669657750726f67726573732f6d61737465722f44656d6f4170702f53637265656e73686f742f73637265656e73686f74312e706e67)
 	
 - UITabBar
+	- [FoldingTabBar.iOS](https://github.com/Yalantis/FoldingTabBar.iOS)
+
+	![](https://camo.githubusercontent.com/e09bb8fc50adba318c9f22174d1751c566f69530/68747470733a2f2f6431337961637572716a676172612e636c6f756466726f6e742e6e65742f75736572732f3439353739322f73637265656e73686f74732f323030333337362f7461625f6261725f616e696d6174696f6e5f66696e2d30322e676966)
+	
 - UITextField
 	- [输入框placeholder上移](http://www.code4app.com/forum.php?mod=viewthread&tid=11101&extra=page%3D108%26filter%3Dsortid%26orderby%3Dheats%26sortid%3D1)
 
 	![](http://www.code4app.com/data/attachment/forum/201610/20/151519xoipzrdiddi1liap.gif)
 	
 - UISwitch
+	- [Runkeeper设计开关控制](https://github.com/gontovnik/DGRunkeeperSwitch/)
+
+	![](https://raw.githubusercontent.com/gontovnik/DGRunkeeperSwitch/master/DGRunkeeperSwitch.gif)
+	
 	- [iOS UISwitch修改大小](http://tech.yunyingxbs.com/article/detail/id/367.html#0-tsina-1-67089-397232819ff9a47a7b7e80a40613cfe1)
 	- [DayNightSwitch](https://github.com/finngaida/DayNightSwitch)
 	
@@ -272,6 +308,10 @@
 	- [使用swift所写的开关，开关可以控制其所在的父视图的颜色填充](http://www.code4app.com/forum.php?mod=viewthread&tid=6790&extra=page%3D491%26filter%3Dsortid%26orderby%3Dheats%26sortid%3D1)
 
 	![](http://osscdn.code4app.com/photo/54bccc27933bf0085b8b4653_1.gif)
+- UISegmentController
+	- [适用于Swift的iOS自定义分段控件。支持垂直布局。支持图像和文字。高度可定制](https://github.com/sima-11/SMSegmentView )
+
+	![](https://github.com/sima-11/SMSegmentView/raw/master/Screenshots/example_vertical.png)
 	
 - UIStatusBar
 	- [JDStatusBarNotification](https://github.com/calimarkus/JDStatusBarNotification)
@@ -290,6 +330,10 @@
 	
 - UINavigationController
 - UIImageView
+	- [一个UIImageView类别让画面显示更好](https://github.com/croath/UIImageView-BetterFace-Swift)
+
+	![](https://camo.githubusercontent.com/a61057c06e6bec8530c3bab0910bc90e0072622b/68747470733a2f2f7261772e6769746875622e636f6d2f63726f6174682f5549496d616765566965772d426574746572466163652f6d61737465722f646f632f707265766965772e706e67)
+	
 	- [让用户的选择图片最大化，抓住用户的眼球](http://www.code4app.com/forum.php?mod=viewthread&tid=7154&extra=page%3D268%26filter%3Dsortid%26orderby%3Dheats%26sortid%3D1)
 
 	![](http://osscdn.code4app.com/photo/56b16f41b5ad2eaf0e8b4ba8_1.gif)
