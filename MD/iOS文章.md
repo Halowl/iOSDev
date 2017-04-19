@@ -222,4 +222,7 @@
 - [iOS保持app真后台运行](http://www.jianshu.com/p/d466f2da0d33)
 - [IOS动画指南](https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION)
 - [AFNetworking 3.0与服务端 自签名证书 https双向认证](http://www.jianshu.com/p/9e573607be13)
+- [OS两个客户端代码复用小技巧](http://shellhue.github.io/2017/04/08/sharecode/)
+- [想染指系统架构？你绝对不可错过的一篇。](https://juejin.im/post/58f45b058d6d8100648a69f0)
+
 
