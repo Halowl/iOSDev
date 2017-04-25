@@ -1,7 +1,7 @@
 #  <font color=red>**iOSDev指南**</font>
 ![image](http://peopleofcolorintech.com/wp-content/uploads/2016/02/iOS-Developer.jpg)
  
-> 因为个人原因(其实就是比较懒),不想写文章,但是,在工作中,有一些常用的,又或者看到不错的东西,想把它们整理起来了,就有了这个库.
+> 记录工作中常用知识点,以及一些优秀的Demo.第三方库等等
 
 
 ####  <font color=red>iOS参考文档</font>
@@ -25,7 +25,4 @@
 
 #### <font color=red>iOS相关的Demo </font>
 - [Demo](https://github.com/gongjujun/iOSDev/blob/master/MD/Demo.md)
-
-
-
 
