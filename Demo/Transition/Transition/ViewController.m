@@ -20,7 +20,7 @@ static NSString *const CELLID = @"CELLID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Transition";
-    self.dataArray =  @[@"scale",@"rotation",@"transition",@"alpha"];
+    self.dataArray =  @[@"maskView/maskLayer",@"scale",@"rotation",@"transition",@"alpha"];
     self.tableView = ({
         UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
         [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CELLID];
