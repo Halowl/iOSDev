@@ -1,27 +1,29 @@
 //
-//  ViewController.m
+//  MaskTableController.m
 //  Transition
 //
-//  Created by Adobe on 17/4/25.
+//  Created by adobe on 2017/4/30.
 //  Copyright © 2017年 龚. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "MaskTableController.h"
+#import "MaskViewController.h"
+#import "MaskViewAnimationController.h"
+#import "CAGradientLayerController.h"
+#import "MaskLabelController.h"
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+@interface MaskTableController ()
 @property (strong,nonatomic)NSArray *dataArray;
-@property (strong,nonatomic)UITableView *tableView;
 @end
 
+@implementation MaskTableController
+
 static NSString *const CELLID = @"CELLID";
-@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Transition";
-    self.dataArray =  @[@"maskView设计动画"];
+    self.title = @"maskView设计动画";
+    self.dataArray =  @[@"maskView基本原理",@"maskView配合alpha通道图片的使用",@"maskView配合CAGradientLayer的使用",@"设计文本横向渐变消失的控件"];
     self.tableView = ({
         UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
         [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CELLID];
@@ -30,9 +32,10 @@ static NSString *const CELLID = @"CELLID";
         tableView.dataSource = self;
         tableView.tableFooterView = [UIView new];
         [self.view addSubview:tableView];
-       tableView;
+        tableView;
     });
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataArray.count;
@@ -50,10 +53,24 @@ static NSString *const CELLID = @"CELLID";
     switch (indexPath.row) {
         case 0:
             
-            [self.navigationController pushViewController:[MaskTableController new] animated:YES];
+            [self.navigationController pushViewController:[MaskViewController new] animated:YES];
+            break;
+        case 1:
+            
+            [self.navigationController pushViewController:[MaskViewAnimationController new] animated:YES];
+            break;
+        case 2:
+            
+            [self.navigationController pushViewController:[CAGradientLayerController new] animated:YES];
+            break;
+        case 3:
+            
+            [self.navigationController pushViewController:[MaskLabelController new] animated:YES];
             break;
         default:
             break;
     }
 }
+
+
 @end
