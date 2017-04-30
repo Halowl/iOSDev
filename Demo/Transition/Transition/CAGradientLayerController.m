@@ -16,22 +16,59 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor  = [UIColor whiteColor];
+    
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+    imageView.image =    [UIImage imageNamed:@"mask"];
+    [self.view addSubview:imageView];
+    
+    CAGradientLayer *layer = [CAGradientLayer layer];
+    layer.frame = imageView.bounds;
+    layer.colors= @[
+                   (id) [UIColor clearColor].CGColor,
+                    (id) [UIColor orangeColor].CGColor,
+                   (id)  [UIColor clearColor].CGColor
+                    ];
+    layer.startPoint = CGPointMake(0,0);
+    layer.endPoint  = CGPointMake(1, 0);
+    layer.locations = @[@0.25,@0.5,@0.75];
+
+    UIView *contentView = [[UIView alloc]initWithFrame:imageView.bounds];
+    [contentView.layer  addSublayer:layer];
+    imageView.maskView = contentView;
+    
+    [self animation];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)animation{
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(-100, 400, 200, 200)];
+    imageView.image =    [UIImage imageNamed:@"mask"];
+    [self.view addSubview:imageView];
+    
+    CAGradientLayer *layer = [CAGradientLayer layer];
+    layer.frame = imageView.bounds;
+    layer.colors= @[
+                    (id) [UIColor clearColor].CGColor,
+                    (id) [UIColor orangeColor].CGColor,
+                    (id)  [UIColor clearColor].CGColor
+                    ];
+    layer.startPoint = CGPointMake(0,0);
+    layer.endPoint  = CGPointMake(1, 1);
+    layer.locations = @[@0.25,@0.5,@0.75,@1];
+    
+    UIView *contentView = [[UIView alloc]initWithFrame:imageView.bounds];
+    [contentView.layer  addSublayer:layer];
+    imageView.maskView = contentView;
+    
+    
+    [UIView animateWithDuration:2.f animations:^{
+        CGRect frame = imageView.frame;
+        frame.origin.x += 300;
+        imageView.frame = frame;
+        
+        
+    }];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

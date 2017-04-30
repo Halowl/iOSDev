@@ -59,7 +59,10 @@ static NSString *const CELLID = @"CELLID";
             
             [self.navigationController pushViewController:[MaskViewAnimationController new] animated:YES];
             break;
+        case 2:
             
+            [self.navigationController pushViewController:[CAGradientLayerController new] animated:YES];
+            break;
         default:
             break;
     }
