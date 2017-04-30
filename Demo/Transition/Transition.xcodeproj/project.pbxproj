@@ -14,6 +14,7 @@
 		986872471EAF3B1B0076D29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986872451EAF3B1B0076D29F /* Main.storyboard */; };
 		986872491EAF3B1B0076D29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986872481EAF3B1B0076D29F /* Assets.xcassets */; };
 		9868724C1EAF3B1B0076D29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9868724A1EAF3B1B0076D29F /* LaunchScreen.storyboard */; };
+		98FA19F11EB60BA50021617E /* CAGradientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FA19F01EB60BA50021617E /* CAGradientLayerController.m */; };
 		98FDA6E61EB4921C0096F8E3 /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FDA6E51EB4921C0096F8E3 /* MaskViewController.m */; };
 		98FDA6E91EB492B80096F8E3 /* MaskViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FDA6E81EB492B80096F8E3 /* MaskViewAnimationController.m */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,8 @@
 		986872481EAF3B1B0076D29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9868724B1EAF3B1B0076D29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9868724D1EAF3B1B0076D29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98FA19EF1EB60BA50021617E /* CAGradientLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerController.h; sourceTree = "<group>"; };
+		98FA19F01EB60BA50021617E /* CAGradientLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerController.m; sourceTree = "<group>"; };
 		98FDA6E41EB4921C0096F8E3 /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		98FDA6E51EB4921C0096F8E3 /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		98FDA6E71EB492B80096F8E3 /* MaskViewAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewAnimationController.h; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				98FDA6E51EB4921C0096F8E3 /* MaskViewController.m */,
 				98FDA6E71EB492B80096F8E3 /* MaskViewAnimationController.h */,
 				98FDA6E81EB492B80096F8E3 /* MaskViewAnimationController.m */,
+				98FA19EF1EB60BA50021617E /* CAGradientLayerController.h */,
+				98FA19F01EB60BA50021617E /* CAGradientLayerController.m */,
 				986872451EAF3B1B0076D29F /* Main.storyboard */,
 				986872481EAF3B1B0076D29F /* Assets.xcassets */,
 				9868724A1EAF3B1B0076D29F /* LaunchScreen.storyboard */,
@@ -169,6 +174,7 @@
 				986872441EAF3B1B0076D29F /* ViewController.m in Sources */,
 				986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */,
 				9868723E1EAF3B1B0076D29F /* main.m in Sources */,
+				98FA19F11EB60BA50021617E /* CAGradientLayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
