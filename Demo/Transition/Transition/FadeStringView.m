@@ -11,7 +11,7 @@
 @interface FadeStringView ()
 
 @property (nonatomic,strong)UILabel *label;
-@property (nonatomic,strong)UIView *maskView;
+@property (nonatomic,strong)UIView *mask;
 
 @end
 
@@ -20,7 +20,8 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     
     if (self = [super initWithFrame: frame]) {
-        [self createLabel:frame];
+        [self createLabel:self.bounds];
+        [self createMask:self.bounds];
     }
     return self;
 }
@@ -35,23 +36,36 @@
 }
 
 - (void)createMask:(CGRect)frame{
-    self.maskView = [[UIView alloc]initWithFrame:self.label.bounds];
-    
     CAGradientLayer *layer = [CAGradientLayer layer];
-    layer.startPoint = CGPointMake(0, 0);
-    layer.endPoint = CGPointMake(1, 0);
+    layer.frame = frame;
     layer.colors =  @[
                       (id)[UIColor clearColor].CGColor,
                       (id)[UIColor blackColor].CGColor,
                       (id)[UIColor blackColor].CGColor,
                       (id)[UIColor clearColor].CGColor,
                       ];
-    layer.locations = @[@0.01,@1,@0.9,@0.99];
-    [self.maskView.layer addSublayer:layer];
+    layer.locations = @[@0.01,@0.1,@0.9,@0.99];
+    layer.startPoint = CGPointMake(0, 0);
+    layer.endPoint = CGPointMake(1, 0);
+    self.mask = [[UIView alloc]initWithFrame:frame];
+    [self.mask.layer addSublayer:layer];
+    self.maskView = self.mask;
+
+}
+
+- (void)fadeRight{
+    [UIView animateWithDuration:2.f animations:^{
+        CGRect frame =  self.mask.frame;
+        frame.origin.x  += frame.size.width;
+        self.mask.frame = frame;
+        
+    }];
+    
 }
 @synthesize text = _text;
 - (void)setText:(NSString *)text{
-   _text = text;
+    _text = text;
+    self.label.text =  text;
 }
 
 - (NSString *)text{

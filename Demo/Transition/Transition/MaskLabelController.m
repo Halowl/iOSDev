@@ -18,9 +18,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    FadeStringView *view = [[FadeStringView alloc]initWithFrame:self.view.bounds];
-    view.text = @"你知不知道";
-    [self.view addSubview:view];
+    FadeStringView *fadeString = [[FadeStringView alloc]initWithFrame:self.view.bounds];
+    fadeString.text = @"你知不知道";
+    [self.view addSubview:fadeString];
+    
+    [fadeString fadeRight];
     
 }
 
