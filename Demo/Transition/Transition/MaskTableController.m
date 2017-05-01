@@ -34,6 +34,13 @@ static NSString *const CELLID = @"CELLID";
         [self.view addSubview:tableView];
         tableView;
     });
+    
+    UILabel *label = [[UILabel alloc]initWithFrame: CGRectMake(0, 0, 0, 200)];
+    label.text = @"摘自极客学院YouXianMing 使用maskView设计动画";
+    label.textColor = [UIColor redColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.numberOfLines = 0;
+    self.tableView.tableFooterView = label;
 }
 
 
