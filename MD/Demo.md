@@ -64,5 +64,7 @@
 
 ![](https://github.com/geekbing/MovieLaunchGuide/raw/master/MovieLaunchGuide.gif)
 
+- [半糖](https://github.com/JoySeeDog/JSDBanTangHomeDemo)
 
+![](https://github.com/JoySeeDog/JSDBanTangHomeDemo/raw/master/gif/bantanghome03.gif)
 
