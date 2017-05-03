@@ -43,8 +43,9 @@ static NSString *const CELLID = @"CELLID";
         case 0:
             [self.navigationController pushViewController:[CALayerDowndController new] animated:YES];
             break;
-            
-            
+        case 1:
+            [self.navigationController pushViewController:[CALayerImageController new] animated:YES];
+            break;
             
         default:
             break;
