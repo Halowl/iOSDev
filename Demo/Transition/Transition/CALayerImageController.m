@@ -40,15 +40,14 @@
     [self.view.layer addSublayer:self.imageLayer3];
     self.imageLayer3.contents =  (__bridge id _Nullable)(image.CGImage);
 
-    [UIView animateWithDuration:3.f animations:^{
-        [self layerAnimation];
-        [self baseAnimation];
-        [self groupAnimation];
-    }];
+    [self performSelector:@selector(layerAnimation) withObject:nil afterDelay:3.f];
+    [self baseAnimation];
+    [self groupAnimation];
 }
 
 // 隐式动画
 - (void)layerAnimation{
+   
     UIImage *image = [UIImage imageNamed:@"2"];
     self.imageLayer1.contents =  (__bridge id _Nullable)(image.CGImage);
 }
@@ -56,9 +55,9 @@
 // 显示动画
 - (void)baseAnimation{
     UIImage *image = [UIImage imageNamed:@"2"];
-    CABasicAnimation *baseAnimation = [[CABasicAnimation alloc]init];
+    CABasicAnimation *baseAnimation = [CABasicAnimation animationWithKeyPath:@"contents"];
     
-    baseAnimation.fromValue = self.view.layer.contents;
+    baseAnimation.fromValue = self.imageLayer2.contents;
     baseAnimation.toValue = (__bridge id _Nullable)(image.CGImage);
     baseAnimation.duration = 3.f;
     self.imageLayer2.contents = (__bridge id _Nullable)(image.CGImage);
@@ -86,7 +85,6 @@
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.duration = 3.f;
     group.animations =  @[contentsAnimation,boundsAnimation];
-    
     self.imageLayer3.bounds = CGRectMake(20, 100 + 150 + 20, 150, 150);
     self.imageLayer3.contents = (__bridge id _Nullable)(image.CGImage);
     [self.imageLayer3 addAnimation:group forKey:nil];
