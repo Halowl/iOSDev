@@ -9,6 +9,7 @@
 #import "CALayerTableController.h"
 #import "CALayerDowndController.h"
 #import "CALayerImageController.h"
+#import "CALayerMaskController.h"
 @interface CALayerTableController ()
 @property (strong,nonatomic)NSArray *dataArray;
 @end
@@ -46,7 +47,9 @@ static NSString *const CELLID = @"CELLID";
         case 1:
             [self.navigationController pushViewController:[CALayerImageController new] animated:YES];
             break;
-            
+        case 2:
+            [self.navigationController pushViewController:[CALayerMaskController new] animated:YES];
+            break;
         default:
             break;
     }
