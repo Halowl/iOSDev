@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="27M-RJ-ONN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wqH-FX-3KR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wqH-FX-3KR" customClass="NavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1xn-FR-4YI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

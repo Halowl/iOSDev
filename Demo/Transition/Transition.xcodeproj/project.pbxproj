@@ -15,6 +15,8 @@
 		980C80FF1EBAC3BA0099C7F4 /* BaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */; };
 		980C81071EBAD22A0099C7F4 /* CAShapeLayerTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81061EBAD22A0099C7F4 /* CAShapeLayerTableController.m */; };
 		980C810A1EBAD39D0099C7F4 /* CAShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81091EBAD39D0099C7F4 /* CAShapeLayerController.m */; };
+		980C810D1EBAE0840099C7F4 /* CAShpeLayerBezierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C810C1EBAE0840099C7F4 /* CAShpeLayerBezierController.m */; };
+		980C81101EBAE3130099C7F4 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C810F1EBAE3130099C7F4 /* NavigationController.m */; };
 		9868723E1EAF3B1B0076D29F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868723D1EAF3B1B0076D29F /* main.m */; };
 		986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872401EAF3B1B0076D29F /* AppDelegate.m */; };
 		986872441EAF3B1B0076D29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872431EAF3B1B0076D29F /* ViewController.m */; };
@@ -46,6 +48,10 @@
 		980C81061EBAD22A0099C7F4 /* CAShapeLayerTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerTableController.m; sourceTree = "<group>"; };
 		980C81081EBAD39D0099C7F4 /* CAShapeLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerController.h; sourceTree = "<group>"; };
 		980C81091EBAD39D0099C7F4 /* CAShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerController.m; sourceTree = "<group>"; };
+		980C810B1EBAE0840099C7F4 /* CAShpeLayerBezierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShpeLayerBezierController.h; sourceTree = "<group>"; };
+		980C810C1EBAE0840099C7F4 /* CAShpeLayerBezierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShpeLayerBezierController.m; sourceTree = "<group>"; };
+		980C810E1EBAE3130099C7F4 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		980C810F1EBAE3130099C7F4 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		986872391EAF3B1B0076D29F /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868723D1EAF3B1B0076D29F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9868723F1EAF3B1B0076D29F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +111,8 @@
 				980C81061EBAD22A0099C7F4 /* CAShapeLayerTableController.m */,
 				980C81081EBAD39D0099C7F4 /* CAShapeLayerController.h */,
 				980C81091EBAD39D0099C7F4 /* CAShapeLayerController.m */,
+				980C810B1EBAE0840099C7F4 /* CAShpeLayerBezierController.h */,
+				980C810C1EBAE0840099C7F4 /* CAShpeLayerBezierController.m */,
 			);
 			name = CAShapeLayer;
 			sourceTree = "<group>";
@@ -137,6 +145,8 @@
 				986872431EAF3B1B0076D29F /* ViewController.m */,
 				980C80FD1EBAC3BA0099C7F4 /* BaseTableController.h */,
 				980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */,
+				980C810E1EBAE3130099C7F4 /* NavigationController.h */,
+				980C810F1EBAE3130099C7F4 /* NavigationController.m */,
 				986872451EAF3B1B0076D29F /* Main.storyboard */,
 				986872481EAF3B1B0076D29F /* Assets.xcassets */,
 				9868724A1EAF3B1B0076D29F /* LaunchScreen.storyboard */,
@@ -246,6 +256,7 @@
 			files = (
 				980C810A1EBAD39D0099C7F4 /* CAShapeLayerController.m in Sources */,
 				980C80EB1EB9BAE20099C7F4 /* CALayerTableController.m in Sources */,
+				980C81101EBAE3130099C7F4 /* NavigationController.m in Sources */,
 				98FA19F71EB61F640021617E /* MaskTableController.m in Sources */,
 				98FDA6E91EB492B80096F8E3 /* MaskViewAnimationController.m in Sources */,
 				980C80FC1EB9E8050099C7F4 /* CALayerMaskController.m in Sources */,
@@ -256,6 +267,7 @@
 				98FA19FB1EB622EA0021617E /* FadeStringView.m in Sources */,
 				986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */,
 				9868723E1EAF3B1B0076D29F /* main.m in Sources */,
+				980C810D1EBAE0840099C7F4 /* CAShpeLayerBezierController.m in Sources */,
 				980C80F21EB9BC870099C7F4 /* CALayerDowndController.m in Sources */,
 				98FA19F41EB61F110021617E /* MaskLabelController.m in Sources */,
 				980C80EF1EB9BB080099C7F4 /* ProgressView.m in Sources */,
