@@ -14,6 +14,7 @@
 		980C80FC1EB9E8050099C7F4 /* CALayerMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C80FB1EB9E8050099C7F4 /* CALayerMaskController.m */; };
 		980C80FF1EBAC3BA0099C7F4 /* BaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */; };
 		980C81071EBAD22A0099C7F4 /* CAShapeLayerTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81061EBAD22A0099C7F4 /* CAShapeLayerTableController.m */; };
+		980C810A1EBAD39D0099C7F4 /* CAShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81091EBAD39D0099C7F4 /* CAShapeLayerController.m */; };
 		9868723E1EAF3B1B0076D29F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868723D1EAF3B1B0076D29F /* main.m */; };
 		986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872401EAF3B1B0076D29F /* AppDelegate.m */; };
 		986872441EAF3B1B0076D29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872431EAF3B1B0076D29F /* ViewController.m */; };
@@ -43,6 +44,8 @@
 		980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableController.m; sourceTree = "<group>"; };
 		980C81051EBAD22A0099C7F4 /* CAShapeLayerTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerTableController.h; sourceTree = "<group>"; };
 		980C81061EBAD22A0099C7F4 /* CAShapeLayerTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerTableController.m; sourceTree = "<group>"; };
+		980C81081EBAD39D0099C7F4 /* CAShapeLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerController.h; sourceTree = "<group>"; };
+		980C81091EBAD39D0099C7F4 /* CAShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerController.m; sourceTree = "<group>"; };
 		986872391EAF3B1B0076D29F /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868723D1EAF3B1B0076D29F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9868723F1EAF3B1B0076D29F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 			children = (
 				980C81051EBAD22A0099C7F4 /* CAShapeLayerTableController.h */,
 				980C81061EBAD22A0099C7F4 /* CAShapeLayerTableController.m */,
+				980C81081EBAD39D0099C7F4 /* CAShapeLayerController.h */,
+				980C81091EBAD39D0099C7F4 /* CAShapeLayerController.m */,
 			);
 			name = CAShapeLayer;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980C810A1EBAD39D0099C7F4 /* CAShapeLayerController.m in Sources */,
 				980C80EB1EB9BAE20099C7F4 /* CALayerTableController.m in Sources */,
 				98FA19F71EB61F640021617E /* MaskTableController.m in Sources */,
 				98FDA6E91EB492B80096F8E3 /* MaskViewAnimationController.m in Sources */,

@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "BaseTableController.h"
+@interface ViewController :BaseTableController
 
 
 @end

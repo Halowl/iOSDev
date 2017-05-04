@@ -27,13 +27,25 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0:
-            [self.navigationController pushViewController:[CALayerDowndController new] animated:YES];
+        {
+            CALayerDowndController *vc = [[CALayerDowndController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 1:
-            [self.navigationController pushViewController:[CALayerImageController new] animated:YES];
+        {
+            CALayerImageController *vc = [[CALayerImageController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 2:
-            [self.navigationController pushViewController:[CALayerMaskController new] animated:YES];
+        {
+            CALayerMaskController *vc = [[CALayerMaskController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         default:
             break;

@@ -7,13 +7,14 @@
 //
 
 #import "CAShapeLayerTableController.h"
-
+#import "CAShapeLayerController.h"
 @interface CAShapeLayerTableController ()
 
 @end
 
 @implementation CAShapeLayerTableController
 
+///drawRect CoreGf 框架 CPU  CAShapeLayer  GPU
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title =  @"iOS中CAShapeLayer的使用";
@@ -22,6 +23,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    switch (indexPath.row) {
+        case 0:
+        {
+            CAShapeLayerController *vc = [[CAShapeLayerController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
 }
 

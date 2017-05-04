@@ -18,10 +18,13 @@
 
 @implementation MaskTableController
 
-
+/* 当title足够长 左上角返回那里不会显示 back 也不会显示上个页面title    <
+   当title够短时,会显示上个页面的title                              < maskView设计动画
+   当title中间长度时,会显示                                        < back
+ 
+ **/
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"maskView设计动画";
     self.dataArray =  @[@"maskView基本原理",@"maskView配合alpha通道图片的使用",@"maskView配合CAGradientLayer的使用",@"设计文本横向渐变消失的控件"];
 }
 
@@ -29,20 +32,32 @@
     
     switch (indexPath.row) {
         case 0:
-            
-            [self.navigationController pushViewController:[MaskViewController new] animated:YES];
+        {
+            MaskViewController *vc = [[MaskViewController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 1:
-            
-            [self.navigationController pushViewController:[MaskViewAnimationController new] animated:YES];
+        {
+            MaskViewAnimationController *vc = [[MaskViewAnimationController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 2:
-            
-            [self.navigationController pushViewController:[CAGradientLayerController new] animated:YES];
+        {
+            CAGradientLayerController *vc = [[CAGradientLayerController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         case 3:
-            
-            [self.navigationController pushViewController:[MaskLabelController new] animated:YES];
+        {
+            MaskLabelController *vc = [[MaskLabelController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
             break;
         default:
             break;
