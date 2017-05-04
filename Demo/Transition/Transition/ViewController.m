@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MaskTableController.h"
 #import "CALayerTableController.h"
+#import "CAShapeLayerTableController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong,nonatomic)NSArray *dataArray;
@@ -21,7 +22,7 @@ static NSString *const CELLID = @"CELLID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Transition";
-    self.dataArray =  @[@"maskView设计动画",@"iOS中CALayer的使用"];
+    self.dataArray =  @[@"maskView设计动画",@"iOS中CALayer的使用",@"iOS中CAShapeLayer的使用"];
     self.tableView = ({
         UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
         [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CELLID];
@@ -53,6 +54,9 @@ static NSString *const CELLID = @"CELLID";
             break;
         case 1:
             [self.navigationController pushViewController:[CALayerTableController new] animated:YES];
+            break;
+        case 2:
+            [self.navigationController pushViewController:[CAShapeLayerTableController new] animated:YES];
             break;
         default:
             break;
