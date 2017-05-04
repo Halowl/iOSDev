@@ -9,6 +9,7 @@
 #import "CAShapeLayerTableController.h"
 #import "CAShapeLayerController.h"
 #import "CAShpeLayerBezierController.h"
+#import "CAShapeLayerStrokeController.h"
 @interface CAShapeLayerTableController ()
 
 @end
@@ -35,6 +36,13 @@
         case 1:
         {
             CAShpeLayerBezierController *vc = [[CAShpeLayerBezierController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            CAShapeLayerStrokeController *vc = [[CAShapeLayerStrokeController alloc]init];
             vc.title =  self.dataArray[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         }
