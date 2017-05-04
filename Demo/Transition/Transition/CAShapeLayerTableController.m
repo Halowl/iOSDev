@@ -10,6 +10,7 @@
 #import "CAShapeLayerController.h"
 #import "CAShpeLayerBezierController.h"
 #import "CAShapeLayerStrokeController.h"
+#import "CAShapeLayerCircularController.h"
 @interface CAShapeLayerTableController ()
 
 @end
@@ -43,6 +44,13 @@
         case 2:
         {
             CAShapeLayerStrokeController *vc = [[CAShapeLayerStrokeController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 3:
+        {
+            CAShapeLayerCircularController *vc = [[CAShapeLayerCircularController alloc]init];
             vc.title =  self.dataArray[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         }

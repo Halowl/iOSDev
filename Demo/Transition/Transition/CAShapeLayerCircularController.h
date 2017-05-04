@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CAShapeLayerCircularController : UINavigationController
+@interface CAShapeLayerCircularController : UIViewController
 
 @end
