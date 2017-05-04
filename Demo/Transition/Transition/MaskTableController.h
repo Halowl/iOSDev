@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableController.h"
 
-@interface MaskTableController : UITableViewController
+@interface MaskTableController : BaseTableController
 
 @end

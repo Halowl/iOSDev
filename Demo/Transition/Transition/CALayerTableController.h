@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface CALayerTableController : UITableViewController
+#import "BaseTableController.h"
+@interface CALayerTableController : BaseTableController
 
 @end

@@ -12,6 +12,7 @@
 		980C80F21EB9BC870099C7F4 /* CALayerDowndController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C80F11EB9BC870099C7F4 /* CALayerDowndController.m */; };
 		980C80F91EB9CC090099C7F4 /* CALayerImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C80F81EB9CC090099C7F4 /* CALayerImageController.m */; };
 		980C80FC1EB9E8050099C7F4 /* CALayerMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C80FB1EB9E8050099C7F4 /* CALayerMaskController.m */; };
+		980C80FF1EBAC3BA0099C7F4 /* BaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */; };
 		9868723E1EAF3B1B0076D29F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868723D1EAF3B1B0076D29F /* main.m */; };
 		986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872401EAF3B1B0076D29F /* AppDelegate.m */; };
 		986872441EAF3B1B0076D29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872431EAF3B1B0076D29F /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		980C80F81EB9CC090099C7F4 /* CALayerImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerImageController.m; sourceTree = "<group>"; };
 		980C80FA1EB9E8050099C7F4 /* CALayerMaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerMaskController.h; sourceTree = "<group>"; };
 		980C80FB1EB9E8050099C7F4 /* CALayerMaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerMaskController.m; sourceTree = "<group>"; };
+		980C80FD1EBAC3BA0099C7F4 /* BaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableController.h; sourceTree = "<group>"; };
+		980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableController.m; sourceTree = "<group>"; };
 		986872391EAF3B1B0076D29F /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868723D1EAF3B1B0076D29F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9868723F1EAF3B1B0076D29F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				986872401EAF3B1B0076D29F /* AppDelegate.m */,
 				986872421EAF3B1B0076D29F /* ViewController.h */,
 				986872431EAF3B1B0076D29F /* ViewController.m */,
+				980C80FD1EBAC3BA0099C7F4 /* BaseTableController.h */,
+				980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */,
 				986872451EAF3B1B0076D29F /* Main.storyboard */,
 				986872481EAF3B1B0076D29F /* Assets.xcassets */,
 				9868724A1EAF3B1B0076D29F /* LaunchScreen.storyboard */,
@@ -235,6 +240,7 @@
 				98FA19F41EB61F110021617E /* MaskLabelController.m in Sources */,
 				980C80EF1EB9BB080099C7F4 /* ProgressView.m in Sources */,
 				98FA19F11EB60BA50021617E /* CAGradientLayerController.m in Sources */,
+				980C80FF1EBAC3BA0099C7F4 /* BaseTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
