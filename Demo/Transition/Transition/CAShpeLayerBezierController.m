@@ -59,8 +59,6 @@
     shapeLayer.fillColor = [UIColor clearColor].CGColor;
     shapeLayer.frame = frame;
     shapeLayer.lineWidth = 1;
-    shapeLayer.lineCap = @"square";
-    shapeLayer.lineDashPattern = @[@5,@5];
     [self.view.layer addSublayer:shapeLayer];
 }
 
