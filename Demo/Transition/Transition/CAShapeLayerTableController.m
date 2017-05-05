@@ -11,6 +11,7 @@
 #import "CAShpeLayerBezierController.h"
 #import "CAShapeLayerStrokeController.h"
 #import "CAShapeLayerCircularController.h"
+#import "CAShapeLayerLineController.h"
 @interface CAShapeLayerTableController ()
 
 @end
@@ -30,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title =  @"iOS中CAShapeLayer的使用";
-    self.dataArray =  @[@"CAShapeLayer简介",@"贝塞尔内曲线与CAShapeLayer的关系",@"StrokeStart与StrokeEnd动画",@"用CAShapeLayer实现圆形进度条效果"];
+    self.dataArray =  @[@"CAShapeLayer简介",@"贝塞尔内曲线与CAShapeLayer的关系",@"StrokeStart与StrokeEnd动画",@"用CAShapeLayer实现圆形进度条效果",@"CAShapeLayer画线"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -60,6 +61,13 @@
         case 3:
         {
             CAShapeLayerCircularController *vc = [[CAShapeLayerCircularController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            CAShapeLayerLineController *vc = [[CAShapeLayerLineController alloc]init];
             vc.title =  self.dataArray[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         }
