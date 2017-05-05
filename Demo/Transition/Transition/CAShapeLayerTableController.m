@@ -17,7 +17,16 @@
 
 @implementation CAShapeLayerTableController
 
-///drawRect CoreGf 框架 CPU  CAShapeLayer  GPU
+/*
+ CAShpeLayer继承自CALayer,可使用CALayer的所有属性
+ CAShapeLayer需要和贝塞尔曲线配合使用才有意义,贝塞尔曲线可为其提供形状,单独使用是没有意义的
+ 使用CAShapeLayer和贝塞尔曲线可以实现不在view的DrawRect方法中绘制一些想要的图形
+ 
+ 
+ 关于CAShpeLayer和DrawRect的比较
+     DrawRect:DraeRect属于UICoreGraphic框架,占用CPU,消耗性能大
+     CAShpaeLayer:CAShapeLayer属于CoreAnimation框架,能过GPU来渲染,节省性能,动画渲染直接提交给手机GPU,不消耗内存
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title =  @"iOS中CAShapeLayer的使用";

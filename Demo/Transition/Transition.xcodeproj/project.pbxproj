@@ -20,6 +20,7 @@
 		980C81131EBB027B0099C7F4 /* CAShapeLayerStrokeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81121EBB027B0099C7F4 /* CAShapeLayerStrokeController.m */; };
 		980C81161EBB0A460099C7F4 /* CAShapeLayerCircularController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81151EBB0A460099C7F4 /* CAShapeLayerCircularController.m */; };
 		980C81191EBB18360099C7F4 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81181EBB18360099C7F4 /* CircleView.m */; };
+		980C81221EBC5EB90099C7F4 /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81211EBC5EB90099C7F4 /* SafariViewController.m */; };
 		9868723E1EAF3B1B0076D29F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868723D1EAF3B1B0076D29F /* main.m */; };
 		986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872401EAF3B1B0076D29F /* AppDelegate.m */; };
 		986872441EAF3B1B0076D29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872431EAF3B1B0076D29F /* ViewController.m */; };
@@ -61,6 +62,9 @@
 		980C81151EBB0A460099C7F4 /* CAShapeLayerCircularController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerCircularController.m; sourceTree = "<group>"; };
 		980C81171EBB18360099C7F4 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		980C81181EBB18360099C7F4 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		980C81201EBC5EB90099C7F4 /* SafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariViewController.h; sourceTree = "<group>"; };
+		980C81211EBC5EB90099C7F4 /* SafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariViewController.m; sourceTree = "<group>"; };
+		980C81231EBC5F5D0099C7F4 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		986872391EAF3B1B0076D29F /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868723D1EAF3B1B0076D29F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9868723F1EAF3B1B0076D29F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +166,9 @@
 				980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */,
 				980C810E1EBAE3130099C7F4 /* NavigationController.h */,
 				980C810F1EBAE3130099C7F4 /* NavigationController.m */,
+				980C81201EBC5EB90099C7F4 /* SafariViewController.h */,
+				980C81211EBC5EB90099C7F4 /* SafariViewController.m */,
+				980C81231EBC5F5D0099C7F4 /* App.h */,
 				986872451EAF3B1B0076D29F /* Main.storyboard */,
 				986872481EAF3B1B0076D29F /* Assets.xcassets */,
 				9868724A1EAF3B1B0076D29F /* LaunchScreen.storyboard */,
@@ -273,6 +280,7 @@
 				980C80EB1EB9BAE20099C7F4 /* CALayerTableController.m in Sources */,
 				980C81101EBAE3130099C7F4 /* NavigationController.m in Sources */,
 				980C81131EBB027B0099C7F4 /* CAShapeLayerStrokeController.m in Sources */,
+				980C81221EBC5EB90099C7F4 /* SafariViewController.m in Sources */,
 				98FA19F71EB61F640021617E /* MaskTableController.m in Sources */,
 				98FDA6E91EB492B80096F8E3 /* MaskViewAnimationController.m in Sources */,
 				980C81191EBB18360099C7F4 /* CircleView.m in Sources */,

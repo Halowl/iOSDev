@@ -8,6 +8,7 @@
 
 #import "CAShapeLayerCircularController.h"
 #import "CircleView.h"  
+
 @interface CAShapeLayerCircularController ()
 
 @property (strong,nonatomic)CircleView *circleView;
@@ -18,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+  
+
+    
     CircleView *circleView = [[CircleView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
     circleView.center = self.view.center;
     circleView.startValue = 0.2f;

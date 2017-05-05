@@ -18,6 +18,24 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+
+    [self shapeLayer];
+    [self viewRect];
+    
+    // 创建 path
+    UIBezierPath *path = [[UIBezierPath alloc]init];
+    [path moveToPoint:CGPointMake(100, 300)];
+    [path addCurveToPoint:CGPointMake(200, 300) controlPoint1:CGPointMake(300, 200) controlPoint2:CGPointMake(100, 200)];
+    // 创建 shapeLayer
+    CAShapeLayer *shapeLayer = [[CAShapeLayer alloc]init];
+    [self.view.layer addSublayer:shapeLayer];
+    shapeLayer.path = path.CGPath;
+    shapeLayer.fillColor = [UIColor clearColor].CGColor;
+    shapeLayer.strokeColor = [UIColor blackColor].CGColor;
+    shapeLayer.lineWidth = 5;
+}
+
+- (void)shapeLayer{
     //create path
     UIBezierPath *path = [[UIBezierPath alloc] init];
     [path moveToPoint:CGPointMake(175, 100)];
@@ -40,8 +58,6 @@
     shapeLayer.path = path.CGPath;
     //add it to our view
     [self.view.layer addSublayer:shapeLayer];
-    
-    [self viewRect];
 }
 
 - (void)viewRect{
