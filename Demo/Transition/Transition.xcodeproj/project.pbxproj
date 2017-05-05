@@ -22,6 +22,7 @@
 		980C81191EBB18360099C7F4 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81181EBB18360099C7F4 /* CircleView.m */; };
 		980C81221EBC5EB90099C7F4 /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81211EBC5EB90099C7F4 /* SafariViewController.m */; };
 		980C81261EBC610B0099C7F4 /* CAShapeLayerLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81251EBC610B0099C7F4 /* CAShapeLayerLineController.m */; };
+		980C81291EBC6E300099C7F4 /* CAShapeLayerCurveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81281EBC6E300099C7F4 /* CAShapeLayerCurveViewController.m */; };
 		9868723E1EAF3B1B0076D29F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868723D1EAF3B1B0076D29F /* main.m */; };
 		986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872401EAF3B1B0076D29F /* AppDelegate.m */; };
 		986872441EAF3B1B0076D29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872431EAF3B1B0076D29F /* ViewController.m */; };
@@ -68,6 +69,8 @@
 		980C81231EBC5F5D0099C7F4 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
 		980C81241EBC610B0099C7F4 /* CAShapeLayerLineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerLineController.h; sourceTree = "<group>"; };
 		980C81251EBC610B0099C7F4 /* CAShapeLayerLineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerLineController.m; sourceTree = "<group>"; };
+		980C81271EBC6E300099C7F4 /* CAShapeLayerCurveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerCurveViewController.h; sourceTree = "<group>"; };
+		980C81281EBC6E300099C7F4 /* CAShapeLayerCurveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerCurveViewController.m; sourceTree = "<group>"; };
 		986872391EAF3B1B0076D29F /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868723D1EAF3B1B0076D29F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9868723F1EAF3B1B0076D29F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				980C81151EBB0A460099C7F4 /* CAShapeLayerCircularController.m */,
 				980C81241EBC610B0099C7F4 /* CAShapeLayerLineController.h */,
 				980C81251EBC610B0099C7F4 /* CAShapeLayerLineController.m */,
+				980C81271EBC6E300099C7F4 /* CAShapeLayerCurveViewController.h */,
+				980C81281EBC6E300099C7F4 /* CAShapeLayerCurveViewController.m */,
 				980C81171EBB18360099C7F4 /* CircleView.h */,
 				980C81181EBB18360099C7F4 /* CircleView.m */,
 			);
@@ -298,6 +303,7 @@
 				986872441EAF3B1B0076D29F /* ViewController.m in Sources */,
 				98FA19FB1EB622EA0021617E /* FadeStringView.m in Sources */,
 				986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */,
+				980C81291EBC6E300099C7F4 /* CAShapeLayerCurveViewController.m in Sources */,
 				9868723E1EAF3B1B0076D29F /* main.m in Sources */,
 				980C810D1EBAE0840099C7F4 /* CAShpeLayerBezierController.m in Sources */,
 				980C80F21EB9BC870099C7F4 /* CALayerDowndController.m in Sources */,
