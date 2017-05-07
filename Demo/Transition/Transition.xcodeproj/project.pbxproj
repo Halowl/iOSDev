@@ -36,6 +36,7 @@
 		98FA19FB1EB622EA0021617E /* FadeStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FA19FA1EB622EA0021617E /* FadeStringView.m */; };
 		98FDA6E61EB4921C0096F8E3 /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FDA6E51EB4921C0096F8E3 /* MaskViewController.m */; };
 		98FDA6E91EB492B80096F8E3 /* MaskViewAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FDA6E81EB492B80096F8E3 /* MaskViewAnimationController.m */; };
+		98FE3DCC1EBF51BE002ADC8A /* CAGradientLayerTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FE3DCB1EBF51BE002ADC8A /* CAGradientLayerTableController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,8 @@
 		98FDA6E51EB4921C0096F8E3 /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		98FDA6E71EB492B80096F8E3 /* MaskViewAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewAnimationController.h; sourceTree = "<group>"; };
 		98FDA6E81EB492B80096F8E3 /* MaskViewAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewAnimationController.m; sourceTree = "<group>"; };
+		98FE3DCA1EBF51BE002ADC8A /* CAGradientLayerTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerTableController.h; sourceTree = "<group>"; };
+		98FE3DCB1EBF51BE002ADC8A /* CAGradientLayerTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerTableController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,7 @@
 		9868723B1EAF3B1B0076D29F /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				98FE3DC91EBF5197002ADC8A /* CAGradientLayer */,
 				980C81041EBAD2000099C7F4 /* CAShapeLayer */,
 				980C80EC1EB9BAE90099C7F4 /* CALayer */,
 				98FA19F81EB620320021617E /* Mask Animation */,
@@ -218,6 +222,15 @@
 				98FA19FA1EB622EA0021617E /* FadeStringView.m */,
 			);
 			name = "Mask Animation";
+			sourceTree = "<group>";
+		};
+		98FE3DC91EBF5197002ADC8A /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				98FE3DCA1EBF51BE002ADC8A /* CAGradientLayerTableController.h */,
+				98FE3DCB1EBF51BE002ADC8A /* CAGradientLayerTableController.m */,
+			);
+			name = CAGradientLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +325,7 @@
 				980C81291EBC6E300099C7F4 /* CAShapeLayerCurveViewController.m in Sources */,
 				9868723E1EAF3B1B0076D29F /* main.m in Sources */,
 				980C810D1EBAE0840099C7F4 /* CAShpeLayerBezierController.m in Sources */,
+				98FE3DCC1EBF51BE002ADC8A /* CAGradientLayerTableController.m in Sources */,
 				980C80F21EB9BC870099C7F4 /* CALayerDowndController.m in Sources */,
 				98FA19F41EB61F110021617E /* MaskLabelController.m in Sources */,
 				980C80EF1EB9BB080099C7F4 /* ProgressView.m in Sources */,
