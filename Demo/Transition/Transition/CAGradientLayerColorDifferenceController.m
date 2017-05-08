@@ -46,6 +46,7 @@ CAGradientLayer的颜色分割点是以0到1的比例来计算的
     [imageView.layer addSublayer:self.gradientLayer];
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:2.f target:self selector:@selector(animationSEL) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop]addTimer:self.timer forMode:NSRunLoopCommonModes];
     
 }
 

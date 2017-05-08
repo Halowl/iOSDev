@@ -9,6 +9,7 @@
 #import "CAGradientLayerTableController.h"
 #import "CAGrdientLayerController.h"
 #import "CAGradientLayerColorDifferenceController.h"
+#import "CAGradientLayerColorController.h"
 @interface CAGradientLayerTableController ()
 
 @end
@@ -40,6 +41,14 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
+        case 2:
+        {
+            CAGradientLayerColorController *vc = [[CAGradientLayerColorController alloc]init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
  
         default:
             break;

@@ -26,6 +26,8 @@
 		980C812C1EBC85FD0099C7F4 /* CAShapeLayerDottedlineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C812B1EBC85FD0099C7F4 /* CAShapeLayerDottedlineController.m */; };
 		980C812F1EC01C1A0099C7F4 /* CAGrdientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C812E1EC01C1A0099C7F4 /* CAGrdientLayerController.m */; };
 		980C81321EC0507A0099C7F4 /* CAGradientLayerColorDifferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81311EC0507A0099C7F4 /* CAGradientLayerColorDifferenceController.m */; };
+		980C81351EC059710099C7F4 /* CAGradientLayerColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81341EC059710099C7F4 /* CAGradientLayerColorController.m */; };
+		980C81381EC05F510099C7F4 /* ColorImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 980C81371EC05F510099C7F4 /* ColorImageView.m */; };
 		9868723E1EAF3B1B0076D29F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868723D1EAF3B1B0076D29F /* main.m */; };
 		986872411EAF3B1B0076D29F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872401EAF3B1B0076D29F /* AppDelegate.m */; };
 		986872441EAF3B1B0076D29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986872431EAF3B1B0076D29F /* ViewController.m */; };
@@ -81,6 +83,10 @@
 		980C812E1EC01C1A0099C7F4 /* CAGrdientLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGrdientLayerController.m; sourceTree = "<group>"; };
 		980C81301EC0507A0099C7F4 /* CAGradientLayerColorDifferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerColorDifferenceController.h; sourceTree = "<group>"; };
 		980C81311EC0507A0099C7F4 /* CAGradientLayerColorDifferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerColorDifferenceController.m; sourceTree = "<group>"; };
+		980C81331EC059710099C7F4 /* CAGradientLayerColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerColorController.h; sourceTree = "<group>"; };
+		980C81341EC059710099C7F4 /* CAGradientLayerColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerColorController.m; sourceTree = "<group>"; };
+		980C81361EC05F510099C7F4 /* ColorImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorImageView.h; sourceTree = "<group>"; };
+		980C81371EC05F510099C7F4 /* ColorImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorImageView.m; sourceTree = "<group>"; };
 		986872391EAF3B1B0076D29F /* Transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9868723D1EAF3B1B0076D29F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9868723F1EAF3B1B0076D29F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -239,6 +245,10 @@
 				980C812E1EC01C1A0099C7F4 /* CAGrdientLayerController.m */,
 				980C81301EC0507A0099C7F4 /* CAGradientLayerColorDifferenceController.h */,
 				980C81311EC0507A0099C7F4 /* CAGradientLayerColorDifferenceController.m */,
+				980C81331EC059710099C7F4 /* CAGradientLayerColorController.h */,
+				980C81341EC059710099C7F4 /* CAGradientLayerColorController.m */,
+				980C81361EC05F510099C7F4 /* ColorImageView.h */,
+				980C81371EC05F510099C7F4 /* ColorImageView.m */,
 			);
 			name = CAGradientLayer;
 			sourceTree = "<group>";
@@ -316,6 +326,7 @@
 			files = (
 				980C810A1EBAD39D0099C7F4 /* CAShapeLayerController.m in Sources */,
 				980C80EB1EB9BAE20099C7F4 /* CALayerTableController.m in Sources */,
+				980C81381EC05F510099C7F4 /* ColorImageView.m in Sources */,
 				980C81101EBAE3130099C7F4 /* NavigationController.m in Sources */,
 				980C81131EBB027B0099C7F4 /* CAShapeLayerStrokeController.m in Sources */,
 				980C81221EBC5EB90099C7F4 /* SafariViewController.m in Sources */,
@@ -328,6 +339,7 @@
 				980C812C1EBC85FD0099C7F4 /* CAShapeLayerDottedlineController.m in Sources */,
 				980C81161EBB0A460099C7F4 /* CAShapeLayerCircularController.m in Sources */,
 				980C81071EBAD22A0099C7F4 /* CAShapeLayerTableController.m in Sources */,
+				980C81351EC059710099C7F4 /* CAGradientLayerColorController.m in Sources */,
 				980C81261EBC610B0099C7F4 /* CAShapeLayerLineController.m in Sources */,
 				980C812F1EC01C1A0099C7F4 /* CAGrdientLayerController.m in Sources */,
 				986872441EAF3B1B0076D29F /* ViewController.m in Sources */,
