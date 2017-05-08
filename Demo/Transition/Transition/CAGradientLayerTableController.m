@@ -8,6 +8,7 @@
 
 #import "CAGradientLayerTableController.h"
 #import "CAGrdientLayerController.h"
+#import "CAGradientLayerColorDifferenceController.h"
 @interface CAGradientLayerTableController ()
 
 @end
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"CAGradientLayer简介",@"CAGradientLayer坐标系统",@"色差动画的实现",@"用CAGradientLayer封装带色差动画的View"];
+//    @"CAGradientLayer简介",
+    self.dataArray = @[@"CAGradientLayer坐标系统",@"色差动画的实现",@"用CAGradientLayer封装带色差动画的View"];
 }
 
 
@@ -31,7 +33,14 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            CAGradientLayerColorDifferenceController *vc = [[CAGradientLayerColorDifferenceController alloc]init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+ 
         default:
             break;
     }

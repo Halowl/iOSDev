@@ -10,6 +10,7 @@
 
 @interface CAGrdientLayerController ()
 
+@property (strong,nonatomic)CAGradientLayer *gradientLayer;
 @end
 
 @implementation CAGrdientLayerController
@@ -22,6 +23,39 @@ CAGraientLayer可以用作png遮罩效果
 */
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self addLayer];
 }
+
+
+- (void)addLayer{
+    self.gradientLayer = [CAGradientLayer layer];
+    self.gradientLayer.frame = CGRectMake(0, 0, 200, 200);
+    self.gradientLayer.position =  self.view.center;
+    self.gradientLayer.borderWidth = 1;
+    [self.view.layer addSublayer:self.gradientLayer];
+    
+    
+    self.gradientLayer.colors = @[
+                                  (__bridge id)[UIColor redColor].CGColor,
+                                  (__bridge id)[UIColor greenColor].CGColor,
+                                  (__bridge id)[UIColor blueColor].CGColor
+                                  ];
+    self.gradientLayer.startPoint = CGPointMake(0, 0);
+    self.gradientLayer.endPoint = CGPointMake(1,0);
+    
+    self.gradientLayer.locations =  @[
+                                      @.25,@.5,@.75
+                                      ];
+    
+    [self performSelector:@selector(animationSel) withObject:nil afterDelay:3.f];
+    
+}
+
+- (void)animationSel{
+    
+    self.gradientLayer.locations =  @[
+                                      @.01,@.5,@.99
+                                      ];
+}
+
 @end
