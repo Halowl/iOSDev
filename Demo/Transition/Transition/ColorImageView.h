@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef enum : NSUInteger {
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT
+} Direction;
+
 @interface ColorImageView : UIImageView
 @property (assign,nonatomic)CGPoint endPoint;
 @property (assign,nonatomic)CGPoint startPoint;
