@@ -7,7 +7,9 @@
 //
 
 #import "CAGradientLayerTableController.h"
-
+#import "CAGrdientLayerController.h"
+#import "CAGradientLayerColorDifferenceController.h"
+#import "CAGradientLayerColorController.h"
 @interface CAGradientLayerTableController ()
 
 @end
@@ -16,19 +18,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"CAGradientLayer 简介",@"CAGradientLayer 坐标系统",@"色差动画的实现",@"用 CAGradientLayer 封装带色差动画的 View"];
+//    @"CAGradientLayer简介",
+    self.dataArray = @[@"CAGradientLayer坐标系统",@"色差动画的实现",@"用CAGradientLayer封装带色差动画的View"];
 }
 
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    switch (indexPath.row) {
+        case 0:
+        {
+            CAGrdientLayerController *vc = [[CAGrdientLayerController alloc]init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 1:
+        {
+            CAGradientLayerColorDifferenceController *vc = [[CAGradientLayerColorDifferenceController alloc]init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            CAGradientLayerColorController *vc = [[CAGradientLayerColorController alloc]init];
+            vc.title = self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+ 
+        default:
+            break;
+    }
 }
-*/
 
 @end
