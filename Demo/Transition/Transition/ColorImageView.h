@@ -17,6 +17,8 @@ typedef enum : NSUInteger {
 } Direction;
 
 @interface ColorImageView : UIImageView
+
+@property (assign,nonatomic)Direction direction;
 @property (assign,nonatomic)CGPoint endPoint;
 @property (assign,nonatomic)CGPoint startPoint;
 @property (strong,nonatomic)UIColor *color;
