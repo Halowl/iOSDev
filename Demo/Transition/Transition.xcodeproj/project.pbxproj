@@ -166,6 +166,23 @@
 			name = CAShapeLayer;
 			sourceTree = "<group>";
 		};
+		9825E93C1EC35193001E9F91 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9868723F1EAF3B1B0076D29F /* AppDelegate.h */,
+				986872401EAF3B1B0076D29F /* AppDelegate.m */,
+				986872421EAF3B1B0076D29F /* ViewController.h */,
+				986872431EAF3B1B0076D29F /* ViewController.m */,
+				980C80FD1EBAC3BA0099C7F4 /* BaseTableController.h */,
+				980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */,
+				980C810E1EBAE3130099C7F4 /* NavigationController.h */,
+				980C810F1EBAE3130099C7F4 /* NavigationController.m */,
+				980C81201EBC5EB90099C7F4 /* SafariViewController.h */,
+				980C81211EBC5EB90099C7F4 /* SafariViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		986872301EAF3B1B0076D29F = {
 			isa = PBXGroup;
 			children = (
@@ -185,20 +202,11 @@
 		9868723B1EAF3B1B0076D29F /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				9825E93C1EC35193001E9F91 /* Main */,
 				98FE3DC91EBF5197002ADC8A /* CAGradientLayer */,
 				980C81041EBAD2000099C7F4 /* CAShapeLayer */,
 				980C80EC1EB9BAE90099C7F4 /* CALayer */,
 				98FA19F81EB620320021617E /* Mask Animation */,
-				9868723F1EAF3B1B0076D29F /* AppDelegate.h */,
-				986872401EAF3B1B0076D29F /* AppDelegate.m */,
-				986872421EAF3B1B0076D29F /* ViewController.h */,
-				986872431EAF3B1B0076D29F /* ViewController.m */,
-				980C80FD1EBAC3BA0099C7F4 /* BaseTableController.h */,
-				980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */,
-				980C810E1EBAE3130099C7F4 /* NavigationController.h */,
-				980C810F1EBAE3130099C7F4 /* NavigationController.m */,
-				980C81201EBC5EB90099C7F4 /* SafariViewController.h */,
-				980C81211EBC5EB90099C7F4 /* SafariViewController.m */,
 				980C81231EBC5F5D0099C7F4 /* App.h */,
 				986872451EAF3B1B0076D29F /* Main.storyboard */,
 				986872481EAF3B1B0076D29F /* Assets.xcassets */,
