@@ -11,6 +11,7 @@
 #import "CALayerTableController.h"
 #import "CAShapeLayerTableController.h"
 #import "CAGradientLayerTableController.h"
+#import "BlurryTableController.h"
 @interface ViewController ()
 @end
 
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"AnimationDemo";
-    self.dataArray =  @[@"maskView设计动画",@"iOS中CALayer的使用",@"iOS中CAShapeLayer的使用",@"iOS中CAGradientLayer的使用"];
+    self.dataArray =  @[@"maskView设计动画",@"iOS中CALayer的使用",@"iOS中CAShapeLayer的使用",@"iOS中CAGradientLayer的使用",@"iOS模糊效果的使用"];
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -50,6 +51,13 @@
         case 3:
         {
             CAGradientLayerTableController *vc = [[CAGradientLayerTableController alloc]init];
+            vc.title =  self.dataArray[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 4:
+        {
+            BlurryTableController *vc = [[BlurryTableController alloc]init];
             vc.title =  self.dataArray[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         }

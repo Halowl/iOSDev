@@ -34,6 +34,7 @@
 		986872471EAF3B1B0076D29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986872451EAF3B1B0076D29F /* Main.storyboard */; };
 		986872491EAF3B1B0076D29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986872481EAF3B1B0076D29F /* Assets.xcassets */; };
 		9868724C1EAF3B1B0076D29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9868724A1EAF3B1B0076D29F /* LaunchScreen.storyboard */; };
+		98962CB21EC4702F00F333E4 /* BlurryTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98962CB11EC4702F00F333E4 /* BlurryTableController.m */; };
 		98FA19F11EB60BA50021617E /* CAGradientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FA19F01EB60BA50021617E /* CAGradientLayerController.m */; };
 		98FA19F41EB61F110021617E /* MaskLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FA19F31EB61F110021617E /* MaskLabelController.m */; };
 		98FA19F71EB61F640021617E /* MaskTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FA19F61EB61F640021617E /* MaskTableController.m */; };
@@ -97,6 +98,8 @@
 		986872481EAF3B1B0076D29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9868724B1EAF3B1B0076D29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9868724D1EAF3B1B0076D29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98962CB01EC4702F00F333E4 /* BlurryTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurryTableController.h; sourceTree = "<group>"; };
+		98962CB11EC4702F00F333E4 /* BlurryTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurryTableController.m; sourceTree = "<group>"; };
 		98FA19EF1EB60BA50021617E /* CAGradientLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerController.h; sourceTree = "<group>"; };
 		98FA19F01EB60BA50021617E /* CAGradientLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerController.m; sourceTree = "<group>"; };
 		98FA19F21EB61F110021617E /* MaskLabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskLabelController.h; sourceTree = "<group>"; };
@@ -169,10 +172,9 @@
 		9825E93C1EC35193001E9F91 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				980C81231EBC5F5D0099C7F4 /* App.h */,
 				9868723F1EAF3B1B0076D29F /* AppDelegate.h */,
 				986872401EAF3B1B0076D29F /* AppDelegate.m */,
-				986872421EAF3B1B0076D29F /* ViewController.h */,
-				986872431EAF3B1B0076D29F /* ViewController.m */,
 				980C80FD1EBAC3BA0099C7F4 /* BaseTableController.h */,
 				980C80FE1EBAC3BA0099C7F4 /* BaseTableController.m */,
 				980C810E1EBAE3130099C7F4 /* NavigationController.h */,
@@ -207,7 +209,9 @@
 				980C81041EBAD2000099C7F4 /* CAShapeLayer */,
 				980C80EC1EB9BAE90099C7F4 /* CALayer */,
 				98FA19F81EB620320021617E /* Mask Animation */,
-				980C81231EBC5F5D0099C7F4 /* App.h */,
+				98962CAF1EC4700800F333E4 /* blurry */,
+				986872421EAF3B1B0076D29F /* ViewController.h */,
+				986872431EAF3B1B0076D29F /* ViewController.m */,
 				986872451EAF3B1B0076D29F /* Main.storyboard */,
 				986872481EAF3B1B0076D29F /* Assets.xcassets */,
 				9868724A1EAF3B1B0076D29F /* LaunchScreen.storyboard */,
@@ -223,6 +227,15 @@
 				9868723D1EAF3B1B0076D29F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98962CAF1EC4700800F333E4 /* blurry */ = {
+			isa = PBXGroup;
+			children = (
+				98962CB01EC4702F00F333E4 /* BlurryTableController.h */,
+				98962CB11EC4702F00F333E4 /* BlurryTableController.m */,
+			);
+			name = blurry;
 			sourceTree = "<group>";
 		};
 		98FA19F81EB620320021617E /* Mask Animation */ = {
@@ -362,6 +375,7 @@
 				980C80EF1EB9BB080099C7F4 /* ProgressView.m in Sources */,
 				98FA19F11EB60BA50021617E /* CAGradientLayerController.m in Sources */,
 				980C80FF1EBAC3BA0099C7F4 /* BaseTableController.m in Sources */,
+				98962CB21EC4702F00F333E4 /* BlurryTableController.m in Sources */,
 				980C81321EC0507A0099C7F4 /* CAGradientLayerColorDifferenceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
