@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"AnimationDemo";
-    self.dataArray =  @[@"maskView设计动画",@"iOS中CALayer的使用",@"iOS中CAShapeLayer的使用",@"iOS中CAGradientLayer的使用",@"iOS模糊效果的使用"];
+    self.dataArray =  @[@"maskView设计动画",@"iOS中CALayer的使用",@"iOS中CAShapeLayer的使用",@"iOS中CAGradientLayer的使用",@"iOS模糊效果的使用",@"设计复杂的iOS动画效果"];
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
