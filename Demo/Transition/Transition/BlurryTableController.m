@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"CoreImage 中的模糊滤镜",@"UIImage+ImageEffects的category 模糊效果",@"iOS8 中 UIVisualEffectView 模糊效果的使用",@"设计下载图片后自动模糊的控件"];
+    self.dataArray = @[@"CoreImage中的模糊滤镜",@"UIImage+ImageEffects的category 模糊效果",@"iOS8中UIVisualEffectView 模糊效果的使用",@"设计下载图片后自动模糊的控件"];
 }
 
 
