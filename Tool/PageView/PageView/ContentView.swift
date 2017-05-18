@@ -99,6 +99,6 @@ extension ContentView:UICollectionViewDelegate{
 
 extension ContentView: TitleViewDelegate{
     func titleView(_ titleView: TitleView) {
-        
+        print(self)
     }
 }
