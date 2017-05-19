@@ -9,16 +9,18 @@
 import UIKit
 
 class PageStyle {
-    var titleViewHeight :CGFloat = 44
-    var titleFont :UIFont =  UIFont.systemFont(ofSize: 14)
-    var isScrollEnable :Bool = false
+    var titleViewHeight : CGFloat = 44
+    var titleFont : UIFont =  UIFont.systemFont(ofSize: 14)
+    var isScrollEnable : Bool = false
     
-    var titleMargin :CGFloat = 20
+    var titleMargin : CGFloat = 20
     
-    var normalColor :UIColor = UIColor.black
-    var selectColor :UIColor = UIColor.orange
+    var normalColor : UIColor = UIColor.black
+    var selectColor : UIColor = UIColor.red
     
-    
+    var bottomLineBackgroundColor = UIColor.red
+    var bottomLineHeight : CGFloat = 2
+    var bottomLineIsShow : Bool = true
 }
 
 

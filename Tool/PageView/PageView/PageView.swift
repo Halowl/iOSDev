@@ -35,7 +35,7 @@ extension PageView{
     fileprivate func setupUI(){
         let rect = CGRect.init(x: 0, y: 0, width: bounds.width, height: pageStyel.titleViewHeight)
         let titleView = TitleView.init(frame: rect, titles: titles, pageStyle:pageStyel )
-        titleView.backgroundColor = UIColor.randomColor()
+        titleView.backgroundColor = UIColor.white
         addSubview(titleView)
         
         let frame = CGRect.init(x: 0, y: titleView.frame.maxY, width: bounds.width, height: bounds.height - rect.height)

@@ -15,12 +15,12 @@ class ViewController: UIViewController {
 
         automaticallyAdjustsScrollViewInsets = false
         
-        let titles:[String] = ["hello","lily","lucy","andy","yuby"]
+//        let titles:[String] = ["hello","lily","lucy","andy","yuby"]
+        
+        let titles:[String] = ["hello","lily","lucy","andy","yubry","leily","lucy","anddy","yaeuby","hello","lily","lucy","andy","yuby"]
         let style = PageStyle()
         style.titleViewHeight = 44
-        style.normalColor = UIColor.blue
-        style.selectColor = UIColor.red
-        
+        style.isScrollEnable = true
         var childVcs:[UIViewController] =  [UIViewController]()
         for _ in  0..<titles.count{
             let vc = UIViewController()
@@ -39,14 +39,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController{
-    fileprivate func setupUI(){
-        setupPageView()
-        
-    }
-    
-    private func setupPageView(){
-        
-    }
+
     
 }
 
