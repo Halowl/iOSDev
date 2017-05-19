@@ -66,20 +66,36 @@
 		989866741ECD3F17000E4B11 /* PageView */ = {
 			isa = PBXGroup;
 			children = (
-				989866751ECD3F17000E4B11 /* AppDelegate.swift */,
-				989866771ECD3F17000E4B11 /* ViewController.swift */,
-				989866911ECD9DC3000E4B11 /* NavigationController.swift */,
-				9898668D1ECD4775000E4B11 /* UIColor-Extension.swift */,
-				9898668F1ECD49AF000E4B11 /* PageStyle.swift */,
-				989866871ECD3F2A000E4B11 /* PageView.swift */,
-				989866891ECD3F36000E4B11 /* TitleView.swift */,
-				9898668B1ECD3F47000E4B11 /* ContentView.swift */,
+				989866951ECF00BE000E4B11 /* Main */,
+				989866931ECF009F000E4B11 /* PageView */,
 				989866791ECD3F17000E4B11 /* Main.storyboard */,
 				9898667C1ECD3F17000E4B11 /* Assets.xcassets */,
 				9898667E1ECD3F17000E4B11 /* LaunchScreen.storyboard */,
 				989866811ECD3F17000E4B11 /* Info.plist */,
 			);
 			path = PageView;
+			sourceTree = "<group>";
+		};
+		989866931ECF009F000E4B11 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				9898668D1ECD4775000E4B11 /* UIColor-Extension.swift */,
+				9898668F1ECD49AF000E4B11 /* PageStyle.swift */,
+				989866871ECD3F2A000E4B11 /* PageView.swift */,
+				989866891ECD3F36000E4B11 /* TitleView.swift */,
+				9898668B1ECD3F47000E4B11 /* ContentView.swift */,
+			);
+			name = PageView;
+			sourceTree = "<group>";
+		};
+		989866951ECF00BE000E4B11 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				989866751ECD3F17000E4B11 /* AppDelegate.swift */,
+				989866771ECD3F17000E4B11 /* ViewController.swift */,
+				989866911ECD9DC3000E4B11 /* NavigationController.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +337,7 @@
 				989866861ECD3F17000E4B11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
