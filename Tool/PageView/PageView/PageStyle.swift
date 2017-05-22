@@ -15,12 +15,21 @@ class PageStyle {
     
     var titleMargin : CGFloat = 20
     
-    var normalColor : UIColor = UIColor.black
-    var selectColor : UIColor = UIColor.red
+    var normalColor : UIColor = UIColor(r: 255, g: 255, b: 255)
+    var selectColor : UIColor = UIColor(r: 255, g: 127, b: 0)
     
     var bottomLineBackgroundColor = UIColor.red
     var bottomLineHeight : CGFloat = 2
     var bottomLineIsShow : Bool = true
+    
+    var isTitleScale : Bool = false
+    var scaleRange  : CGFloat = 1.2
+    
+    var isShowCoverView : Bool = false
+    var coverBgColor : UIColor =  UIColor.randomColor()
+    var coverAlpah : CGFloat = 0.4
+    var coverMargin : CGFloat = 8
+    var coverHeight : CGFloat = 25
 }
 
 

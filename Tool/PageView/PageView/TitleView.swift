@@ -111,15 +111,18 @@ extension TitleView{
                     x = lastLabel.frame.maxX + pageStyle.titleMargin
                 }
             }
-            
             label.frame = CGRect.init(x: x, y: y, width: w, height: h)
+            
         }
         
+        if pageStyle.isTitleScale && titleLabels.first == lastLabel{
+            lastLabel.transform = CGAffineTransform.init(scaleX: pageStyle.scaleRange, y: pageStyle.scaleRange)
+        }
         if pageStyle.isScrollEnable{
-//            scrollView.contentSize = CGSize.init(width:titleLabels.last!.frame.maxX + pageStyle.titleMargin * 0.5, height: bounds.height)
             scrollView.contentSize.width = titleLabels.last!.frame.maxX + pageStyle.titleMargin * 0.5
         }
         
+
     }
     
     
@@ -133,7 +136,7 @@ extension TitleView{
     
     @objc fileprivate func setupBottomLineFrame(){
         let x = lastLabel.frame.origin.x
-        let y = lastLabel.frame.maxY - pageStyle.bottomLineHeight
+        let y = bounds.height - pageStyle.bottomLineHeight
         let w = lastLabel.frame.width
         let h =  pageStyle.bottomLineHeight
         bottomLine.frame = CGRect.init(x: x, y: y, width: w, height: h)
@@ -147,15 +150,17 @@ extension TitleView{
         let label = tap.view as! UILabel
         label.textColor = pageStyle.selectColor
         lastLabel.textColor = pageStyle.normalColor
+        if pageStyle.isTitleScale{
+            label.transform = lastLabel.transform
+            lastLabel.transform =  CGAffineTransform.identity
+        }
         lastLabel = label
         
         delegate?.titleView(self, index: label.tag)
-
+        
         
         // 3.调整BottomLine
         if pageStyle.bottomLineIsShow {
-//            bottomLine.frame.origin.x = label.frame.origin.x
-//            bottomLine.frame.size.width = label.frame.width
             setupBottomLineFrame()
         }
         
@@ -208,6 +213,14 @@ extension TitleView : ContentViewDelegae{
         
         let newLabel = titleLabels[index]
 
+        // 2.渐变文字颜色
+        let selectRGB = getGRBValue(pageStyle.selectColor)
+        let normalRGB = getGRBValue(pageStyle.normalColor)
+        let deltaRGB = (selectRGB.0 - normalRGB.0, selectRGB.1 - normalRGB.1, selectRGB.2 - normalRGB.2)
+        lastLabel.textColor = UIColor(r: selectRGB.0 - deltaRGB.0 * progress, g: selectRGB.1 - deltaRGB.1 * progress, b: selectRGB.2 - deltaRGB.2 * progress)
+        newLabel.textColor = UIColor(r: normalRGB.0 + deltaRGB.0 * progress, g: normalRGB.1 + deltaRGB.1 * progress, b: normalRGB.2 + deltaRGB.2 * progress)
+        
+        
         // 3.渐变BottomLine
         if pageStyle.bottomLineIsShow {
             let deltaX = newLabel.frame.origin.x - lastLabel.frame.origin.x
@@ -216,9 +229,19 @@ extension TitleView : ContentViewDelegae{
             bottomLine.frame.size.width = lastLabel.frame.width + deltaW * progress
         }
         
-        
+        if pageStyle.isTitleScale{
+            let deltaScale = pageStyle.scaleRange - 1.0
+            lastLabel.transform = CGAffineTransform(scaleX: pageStyle.scaleRange - deltaScale * progress, y: pageStyle.scaleRange - deltaScale * progress)
+            newLabel.transform = CGAffineTransform(scaleX: 1.0 + deltaScale * progress, y: 1.0 + deltaScale * progress)
+        }
 
     }
     
-
+    private func getGRBValue(_ color : UIColor) -> (CGFloat, CGFloat, CGFloat) {
+        guard  let components = color.cgColor.components else {
+            fatalError("文字颜色请按照RGB方式设置")
+        }
+        
+        return (components[0] * 255, components[1] * 255, components[2] * 255)
+    }
 }
