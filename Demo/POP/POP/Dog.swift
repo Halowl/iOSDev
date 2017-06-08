@@ -13,6 +13,4 @@ class Dog: NSObject,RunProtocol {
         print("eating")
     }
     
-    
-    
 }

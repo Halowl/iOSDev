@@ -16,7 +16,6 @@ class  HomeViewController: UIViewController,TitlePortocol {
         dog.runing()
         dog.eat()
         
-        
         self.setTitle()
         setupUI()
     }
@@ -25,6 +24,7 @@ class  HomeViewController: UIViewController,TitlePortocol {
 }
 
 extension HomeViewController{
+    
     fileprivate func setupUI(){
         let view = TestView()
         view.setBackGroudColor()
