@@ -47,7 +47,7 @@
 
 - [Tip两个不等宽的 Vie](#tip-1)
 - [Tip 2：让 AutoLayout 与 UIScrollView 合作无间](#tip-2)
-- [AutoLayout Tipss](#AutoLayoutTipss)
+- [AutoLayoutTipss](#AutoLayoutTipss)
 - [diff语法](#diff语法)
 
 ---
