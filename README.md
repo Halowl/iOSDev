@@ -47,7 +47,7 @@
 
 - [Tip两个不等宽的 Vie](#tip-1)
 - [Tip 2：让 AutoLayout 与 UIScrollView 合作无间](#tip-2)
-- [utoLayoutTipss](#utoLayoutTipss)
+- [utoLayoutTipss](#utoLayout)
 - [diff语法](#diff)
 
 ---
@@ -189,7 +189,7 @@ NSLayoutConstraint *constraint5 =[NSLayoutConstraint constraintWithItem:helperVi
 ---
 
 欢迎转载，但请一定注明出处！ [https://github.com/nixzhu/dev-blog](https://github.com/nixzhu/dev-blog)
-## utoLayoutTipss
+## utoLayout
 我是一个非常非常懒惰的人，但由于我擅长寻找并使用优秀的工具、擅长找到省劲的工作方法，这两点让我足以懒懒地用一天时间完成普通产品经理一星期的工作量，没错，工作效率五倍以上。就按照产品经理的工作流程来罗列我所使用的工具和相应的诀窍吧。1，首先是iPhone ，作为产品经理，要尽量体验到更多优秀的产品设计，苹果手机对此很有帮助。其实最重要的在于，iphone的稳定性和易用性将节省你不少在安卓机上的刷机、换系统、杀毒、清理内存、清理后台的时间。2，纸笔，开会、沟通、调研、构思，在需要捕捉灵感的时候，任何中断都不被允许，带着一个可以嵌入一支笔的微型手帐，是最好的工作习惯，没有之一。
 
 
