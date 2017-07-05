@@ -231,7 +231,7 @@
 ---
 
 - [Tip 1：两个不等宽的 View，彼此相邻，并“共同”居中于 Superview](#tip-1)
-- [Tip 2：让 AutoLayout 与 UIScrollView 合作无间](## Tip 2)
+- [Tip 2：让 AutoLayout 与 UIScrollView 合作无间](# Tip 2)
 
 ---
 
@@ -367,6 +367,9 @@ NSLayoutConstraint *constraint5 =[NSLayoutConstraint constraintWithItem:helperVi
 ---
 
 欢迎转载，但请一定注明出处！ [https://github.com/nixzhu/dev-blog](https://github.com/nixzhu/dev-blog)
+
+
+
 
 
 
