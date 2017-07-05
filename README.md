@@ -47,7 +47,8 @@
 
 - [Tip两个不等宽的 Vie](#tip-1)
 - [Tip 2：让 AutoLayout 与 UIScrollView 合作无间](#tip-2)
-- [Tip 2：让 AutoLayout 与 UIScrollView 合作无间](#autoLayout-tipss)
+- [AutoLayout Tipss](#AutoLayout Tipss)
+- [diff语法](#diff语法)
 
 ---
 ## AutoLayout Tipss
@@ -181,7 +182,7 @@ NSLayoutConstraint *constraint5 =[NSLayoutConstraint constraintWithItem:helperVi
  这时候就看起来“正常”了，对吧？同样的道理，如果你要往 UIScrollView 里放入很多很多的 Subview，那你就先将 View 的 Size 改到一个合适的尺寸，再做 Subview 的布局，注意修改约束的“值”（因为看起来的长度不一定是实际的长度）。
  
 最后强调一点，确保约束能让 AutoLayout 确定 UIScrollView 的 contentView 的 Size，此外就是正常的 AutoLayout 用法。当然，有时候我们只需要高度增加，宽度和屏幕一样，那约束好设置吗？
-
+## diff语法
 同样有个 [Demo 放在 GitHub](https://github.com/nixzhu/AutoLayoutInUIScrollView)，如有必要，请稍微看看！
 
 2015年11月7日补记：[微博评论里](http://weibo.com/2076580237/D2zBsiMPk?type=comment)有人提到所谓正确的用法是“使用一个单一的containerView占满全部，然后把所有的subview添加到containerView中”，但这是我极力避免的，因为这样的方式并没有说清楚原理。Demo 里有三个 Tab，第一个是上面介绍的过程，第二个是限制为只能上下滑动，第三个是要显示的东西的尺寸（无论高宽）超过屏幕的情况。它们都不需要一个中间的containerView。
@@ -189,6 +190,8 @@ NSLayoutConstraint *constraint5 =[NSLayoutConstraint constraintWithItem:helperVi
 ---
 
 欢迎转载，但请一定注明出处！ [https://github.com/nixzhu/dev-blog](https://github.com/nixzhu/dev-blog)
+
+
 
 
 
